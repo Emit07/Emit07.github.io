@@ -43,6 +43,9 @@
   .crop li::before { content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Cpath d='M8 16V4' stroke='%23175e54' stroke-width='1.5'/%3E%3Cg fill='%23e0a800' stroke='%238c1515' stroke-width='.6'%3E%3Cellipse cx='8' cy='3' rx='1.7' ry='2.6'/%3E%3Cellipse cx='5' cy='7' rx='1.5' ry='2.5' transform='rotate(-35 5 7)'/%3E%3Cellipse cx='11' cy='7' rx='1.5' ry='2.5' transform='rotate(35 11 7)'/%3E%3Cellipse cx='5' cy='11' rx='1.5' ry='2.5' transform='rotate(-35 5 11)'/%3E%3Cellipse cx='11' cy='11' rx='1.5' ry='2.5' transform='rotate(35 11 11)'/%3E%3C/g%3E%3C/svg%3E"); margin-right: 6px; vertical-align: -2px; }
   #contact { margin: 16px 0 4px; font-size: 20px; font-weight: bold; color: #8c1515; }
   .contact { display: grid; grid-template-columns: repeat(3, 1fr); justify-items: center; gap: 4px 16px; padding: 8px; border: 5px groove #8c1515; }
+  .now { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; padding: 10px; }
+  .now figure { margin: 0; text-align: center; font-size: 16px; }
+  .now img { display: block; height: 170px; max-width: 100%; margin: 0 auto 6px; object-fit: contain; }
   @media (max-width: 560px) { .contact { grid-template-columns: 1fr; } }
   .col { flex: 1 1 300px; display: flex; flex-direction: column; gap: 16px; }
   .col .box { flex: 1 1 auto; display: flex; flex-direction: column; }
@@ -102,16 +105,6 @@
   </div>
 
   <div class="box">
-  <h2 id="now">&raquo; What I'm up to</h2>
-  <ul>
-    <li><b>Reading:</b> Naked Lunch - William Burroughs</li>
-    <li><b>Current Album:</b> Out to Lunch - Eric Dolphy</li>
-    <li><b>Running</b></li>
-  </ul>
-  </div>
-  </div>
-
-  <div class="box">
   <!-- copy a <li> to add a stat -->
   <h2 id="stats">&raquo; Stats</h2>
   <ul>
@@ -119,12 +112,27 @@
     <li><b>From:</b> Monterey, CA and Florence, Italy</li>
 	<!-- <li><b>Distance ran:</b> >4,000mi</li> -->
     <li><b>Mile PR:</b> 4:43</li>
-    <li><b>Nights outdoors :</b> 19 (YTD)</li>
 	<li><b>Languages:</b> Italian, English, Spanish </li>
     <li><b>Learning:</b> Chinese, Portuguese</li>
+    <li><b>Nights outdoors :</b> 19 (YTD)</li>
 	<br>
     arch + vim btw
   </ul>
+  </div>
+  </div>
+
+  <div class="box">
+  <h2 id="now">&raquo; What I'm up to</h2>
+  <div class="now">
+    <figure>
+      <img src="photos/five-pieces.jpg" alt="Album cover of Five Pieces 1975 by Anthony Braxton">
+      <b>Listening:</b><br>Five Pieces (1975)<br>Anthony Braxton
+    </figure>
+    <figure>
+      <img src="photos/naked-lunch.jpg" alt="Book cover of Naked Lunch by William S. Burroughs">
+      <b>Reading:</b><br>Naked Lunch<br>William Burroughs
+    </figure>
+  </div>
   </div>
   </div>
 
@@ -192,7 +200,7 @@
       <span class="button" style="background:#00c;color:#ff0">BEST VIEWED<br>800 x 600</span>
     </p>
     <!-- FILLME: update this when you change the page -->
-    <p><small>Last updated November 5, 2026 &bull; &copy; 2026 Alessandro De Leo</small></p>
+    <p><small>Last updated November 6, 2026 &bull; &copy; 2026 Alessandro De Leo</small></p>
   </div>
 
 </div>
