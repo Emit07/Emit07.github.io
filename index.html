@@ -22,7 +22,7 @@
   #page { max-width: 780px; margin: 0 auto; background: #fffbe8; border: 6px ridge #8c1515; padding: 14px; }
   h1 { font-family: "Times New Roman", "Times", serif; color: #8c1515; font-size: 42px; text-align: center; margin: 6px 0; }
   h2 { background: #8c1515; color: #ffff66; font-size: 20px; padding: 3px 8px; margin: 26px 0 8px; }
-  hr { border: solid #8c1515; border-width: 3px 0 1px; height: 3px; background: #ffd76a; margin: 16px 0; }
+  hr { border: 0; height: 2px; background: #8c1515; margin: 16px 0; }
   a { color: #0000ee; }
   a:visited { color: #551a8b; }
   a:hover { color: #fff; background: #f00; }
@@ -42,7 +42,7 @@
   .box .crop { list-style: none; margin: auto; padding: 8px; }
   .crop li::before { content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Cpath d='M8 16V4' stroke='%23175e54' stroke-width='1.5'/%3E%3Cg fill='%23e0a800' stroke='%238c1515' stroke-width='.6'%3E%3Cellipse cx='8' cy='3' rx='1.7' ry='2.6'/%3E%3Cellipse cx='5' cy='7' rx='1.5' ry='2.5' transform='rotate(-35 5 7)'/%3E%3Cellipse cx='11' cy='7' rx='1.5' ry='2.5' transform='rotate(35 11 7)'/%3E%3Cellipse cx='5' cy='11' rx='1.5' ry='2.5' transform='rotate(-35 5 11)'/%3E%3Cellipse cx='11' cy='11' rx='1.5' ry='2.5' transform='rotate(35 11 11)'/%3E%3C/g%3E%3C/svg%3E"); margin-right: 6px; vertical-align: -2px; }
   #contact { margin: 16px 0 4px; font-size: 20px; font-weight: bold; color: #8c1515; }
-  .contact { display: grid; grid-template-columns: repeat(3, 1fr); justify-items: center; gap: 4px 16px; padding: 8px; border: 5px groove #8c1515; }
+  .contact { display: grid; grid-template-columns: repeat(3, 1fr); justify-items: center; gap: 4px 16px; font-size: 21px; }
   .now { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; padding: 10px; }
   .now figure { margin: 0; text-align: center; font-size: 16px; }
   .now img { display: block; height: 170px; max-width: 100%; margin: 0 auto 6px; object-fit: contain; }
@@ -135,8 +135,8 @@
   </div>
   </div>
   </div>
-
-  <p class="center" id="contact">Get in touch</p>
+  <p class="center" id="contact">Get in touch:</p>
+  <br>
   <div class="contact">
     <a href="mailto:adeleo@stanford.edu">adeleo@stanford.edu</a>
     <a href="https://github.com/emit07">GitHub</a>
@@ -162,11 +162,12 @@
     <a href="https://archlinux.org"><img src="icons/archlinux.svg" alt="">Arch Linux</a>
     <a href="https://www.vim.org"><img src="icons/vim.svg" alt="">Vim</a>
     <a href="https://cmus.github.io"><img src="icons/cmus.svg" alt="">cmus</a>
-    <a href="https://www.openstreetmap.org"><img src="icons/openstreetmap.svg" alt="">OpenStreetMap</a>
-    <a href="https://qgis.org"><img src="icons/qgis.svg" alt="">QGIS</a>
+    <a href="https://st.suckless.org"><img src="icons/st.svg" alt="">st</a>
     <a href="https://i3wm.org"><img src="icons/i3.svg" alt="">i3</a>
     <a href="https://www.latex-project.org"><img src="icons/latex.svg" alt="">LaTeX (XeLaTeX)</a>
     <a href="https://en.wikipedia.org/wiki/Markdown"><img src="icons/markdown.svg" alt="">Markdown</a>
+    <a href="https://www.openstreetmap.org"><img src="icons/openstreetmap.svg" alt="">OpenStreetMap</a>
+    <a href="https://qgis.org"><img src="icons/qgis.svg" alt="">QGIS</a>
   </div>
 
   <!-- FILLME: add the context for each photo -->
