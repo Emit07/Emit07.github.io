@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<!--
+  hi, you found the source! everything is in this one file.
+  search for "FILLME" to find all the stuff you need to change.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>~ale's home page</title>
+<style>
+  body {
+    margin: 0;
+    padding: 12px;
+    color: #000;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 18px;
+    /* tiled starfield, the background every good website had */
+    background: #2a0505 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Crect width='80' height='80' fill='%232a0505'/%3E%3Cg fill='%23ffd76a'%3E%3Crect x='10' y='14' width='2' height='2'/%3E%3Crect x='52' y='8' width='1' height='1'/%3E%3Crect x='66' y='40' width='2' height='2'/%3E%3Crect x='28' y='50' width='1' height='1'/%3E%3Crect x='44' y='68' width='2' height='2'/%3E%3C/g%3E%3Cg fill='%23fff'%3E%3Crect x='34' y='24' width='1' height='1'/%3E%3Crect x='8' y='66' width='1' height='1'/%3E%3Crect x='72' y='72' width='1' height='1'/%3E%3C/g%3E%3C/svg%3E");
+  }
+  #page { max-width: 780px; margin: 0 auto; background: #fffbe8; border: 6px ridge #8c1515; padding: 14px; }
+  h1 { font-family: "Comic Sans MS", "Comic Sans", cursive; color: #8c1515; font-size: 42px; text-align: center; margin: 6px 0; text-shadow: 2px 2px 0 #ffd76a; }
+  h2 { background: #8c1515; color: #ffff66; font-size: 20px; padding: 3px 8px; margin: 26px 0 8px; }
+  hr { border: 0; height: 6px; background: repeating-linear-gradient(90deg, #8c1515 0 12px, #ffd76a 12px 24px, #175e54 24px 36px); margin: 16px 0; }
+  a { color: #0000ee; }
+  a:visited { color: #551a8b; }
+  a:hover { color: #fff; background: #f00; }
+  table { border-collapse: collapse; width: 100%; }
+  th, td { border: 2px outset #999; padding: 4px 8px; text-align: left; vertical-align: top; }
+  th { background: #ffd76a; }
+  pre { background: #000; color: #33ff33; padding: 8px; overflow-x: auto; font-size: 15px; }
+
+  .center { text-align: center; }
+  .intro { display: flex; flex-wrap: wrap; gap: 16px; align-items: flex-start; }
+  .intro > div { flex: 1 1 300px; }
+  .photo { width: 200px; height: 200px; box-sizing: border-box; border: 5px groove #8c1515; background: #ddd; display: flex; align-items: center; justify-content: center; text-align: center; font-family: "Courier New", monospace; font-size: 14px; object-fit: cover; }
+  .gallery { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+  .pics figure { margin: 0 0 16px; }
+  .pics img { display: block; margin: 0 auto; max-width: 100%; max-height: 480px; box-sizing: border-box; border: 5px groove #8c1515; }
+  .pics .small img { max-height: 380px; }
+  .pics figcaption { font-size: 16px; margin-top: 4px; text-align: center; }
+  .blink { animation: blink 1s steps(2, start) infinite; color: #f00; font-weight: bold; }
+  @keyframes blink { to { visibility: hidden; } }
+  .construction { background: repeating-linear-gradient(45deg, #ffd700 0 16px, #000 16px 32px); padding: 6px; }
+  .construction span { display: block; background: #ffd700; font-weight: bold; text-align: center; padding: 3px; }
+  .button { display: inline-block; width: 88px; height: 31px; box-sizing: border-box; border: 2px outset #ccc; font: bold 10px/1.1 "Courier New", monospace; text-align: center; padding-top: 5px; margin: 2px; overflow: hidden; }
+
+  @media (prefers-reduced-motion: reduce) { .blink { animation: none; } }
+</style>
+</head>
+<body>
+<div id="page">
+
+  <!-- FILLME: your name -->
+  <h1>*~ Welcome to Ale's Home Page ~*</h1>
+
+  <hr>
+
+  <div class="intro">
+    <!-- FILLME: this is your GitHub avatar. save your real photo as me.jpg and delete the caption -->
+    <div style="flex: none">
+      <img class="photo" src="headshot.jpg" alt="Headshot of Ale">
+    </div>
+    <div>
+      <!-- FILLME: add your year and hometown -->
+      <p><b>Hello!!</b> My name is <b>Alessandro De Leo</b>, but you can call me Ale. I'm a student
+      at Stanford majoring in <b>Computer Science</b> with a minor in
+      <b>Earth Systems</b> (Sustainability Track).</p>
+      <p>I work on ML research, software engineering, and environmental tech. Lately I've been
+      exploring machine learning, systems, and remote sensing. I also do research at
+      the <b>Sustainable Solutions Lab</b>.</p>
+	  <!-- <p>arch + vim btw</p> -->
+      <!-- FILLME: add resume.pdf to this folder -->
+	  <!--<p><span class="blink">NEW!</span> <a href="resume.pdf">Here's my resume</a>.</p>-->
+    </div>
+  </div>
+
+  <!-- FILLME -->
+  <h2 id="now">&raquo; What I'm up to right now</h2>
+  <ul>
+    <li><b>Building:</b> crop disease forecasting </li>
+    <li><b>Reading:</b> <i>Naked Lunch - William Burroughs</i></li>
+    <li><b>Listening to:</b> Whoa - Pradabagshawty</li>
+  </ul>
+
+  <!-- copy a <li> to add a stat -->
+  <h2 id="stats">&raquo; Stats</h2>
+  <ul>
+    <li><b>School:</b> <img src="stanford.svg" alt="" style="height: 20px; vertical-align: text-bottom"> Stanford University, sophomore</li>
+    <li><b>From:</b> Monterey County (831) and Italy</li>
+	<li><b>Miles ran:</b> >4,000mi</li>
+    <li><b>Mile PR:</b> 4:43</li>
+    <li><b>Nights slept outdoors (YTD):</b> 19</li>
+	<li><b>Speaks:</b> Italian (native), English (native), Spanish (fluent) </li>
+    <li><b>Learning:</b> Chinese, Portuguese</li>
+    <li><b>Kerouac novels read:</b> 3</li>
+	<br>
+    arch + vim btw
+  </ul>
+
+  <!-- copy a <dt>/<dd> pair to add a project -->
+  <h2 id="projects">&raquo; Projects</h2>
+  <dl>
+    <dt><a href="https://github.com/Emit07/rivet"><b>rivet</b></a> <small>(Rust)</small></dt>
+    <dd>A distributed task queue with effectively-once execution, tested by a chaos harness.</dd>
+    <dt><a href="https://github.com/Emit07/QDANN"><b>QDANN</b></a> <small>(Python)</small></dt>
+    <dd>A from-the-paper reimplementation of a quantile-loss domain adversarial neural network for mapping 30m subfield crop yield from remote sensing data.</dd>
+    <dt><a href="https://github.com/Emit07/wildfire-prediction"><b>wildfire-prediction</b></a> 
+    <dd>Machine learning to predict current wildfire risk, plus future risk driven by climate change.</dd>
+    <dd>A command line weather toolkit.</dd>
+  </dl>
+
+  <!-- FILLME: add the context for each photo -->
+  <h2 id="pictures">&raquo; Pictures</h2>
+  <div class="pics">
+    <figure>
+      <a href="photos/image-2.jpg" target="_blank"><img src="photos/image-2.jpg" alt="Panorama of forested mountain ridges from a rocky summit under a clear blue sky" loading="lazy"></a>
+      <figcaption>Panorama from Ventana Double Cone Summit (32mi round trip), July 2026. [Ventana Wilderness] <a href="photos/image-2.jpg" target="_blank">(click to enlarge)</a></figcaption>
+    </figure>
+    <figure>
+      <img src="photos/PXL_20260626_005420551.MP.jpg" alt="A hiker with trekking poles and a dark dog walking a narrow trail through a green canyon toward distant mountains" loading="lazy">
+      <figcaption>Restoring the Santa Lucia trail with Birdman (further) and Monkey (closer), June 2026. [Ventana Wilderness]</figcaption>
+    </figure>
+    <figure class="small">
+      <img src="photos/PXL_20240303_172019997.jpg" alt="A snowy trail with footprints running past frosted pines in thick fog" loading="lazy">
+      <figcaption>Snow near Chews Ridge, March 2024. </figcaption>
+    </figure>
+    <figure class="small">
+      <img src="photos/PXL_20230818_062134160.jpg" alt="A red-roofed coastal village far below a rocky ridge, with blue sea behind it" loading="lazy">
+      <figcaption>Running with my cousin on Monte San Bartolomeo looking at Chiessi, August 2023. [Isola D'Elba, Italy]</figcaption>
+    </figure>
+  </div>
+
+  <h2 id="contact">&raquo; Get in touch</h2>
+  <p>
+    Email: <a href="mailto:adeleo@stanford.edu">adeleo [at] stanford [dot] edu</a><br>
+    GitHub: <a href="https://github.com/emit07">github.com/emit07</a><br>
+    LinkedIn: <a href="https://www.linkedin.com/in/aledeleo">linkedin.com/in/aledeleo</a>
+  </p>
+
+  <hr>
+
+  <div class="construction"><span>THIS PAGE IS ALWAYS UNDER CONSTRUCTION</span></div>
+
+  <div class="center">
+    <p>
+      <span class="button" style="background:#000;color:#3f3">MADE WITH<br>VIM</span>
+      <span class="button" style="background:#00c;color:#ff0">BEST VIEWED<br>800 x 600</span>
+      <span class="button" style="background:#c0c0c0;color:#000">NO COOKIES<br>NO AI SLOP</span>
+    </p>
+    <!-- FILLME: update this when you change the page -->
+    <p><small>Last updated November 5, 2026 &bull; &copy; 2026 Alessandro De Leo</small></p>
+  </div>
+
+</div>
+</body>
+</html>
